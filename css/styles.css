@@ -106,7 +106,8 @@ main {
 }
 
 .card__title a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--yellow);
 }
 
 .card__description {
