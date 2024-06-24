@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+}
+
+:root {
+    --black: #111;
+    --pure-white: #fff;
+    --yellow: #f4d04e;
+    --grey: #7f7f7f;
+    --font-family: "Figtree", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--yellow);
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 24px;
+    width: 384px;
+    min-height: 522px;
+    box-shadow: 8px 8px 0 0 #000;
+    background: var(--pure-white);
+}
+
+.card__image {
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.card__categories_list {
+    margin-bottom: 12px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.card__categories_item {
+    border-radius: 4px;
+    padding: 4px 12px;
+    background: var(--yellow);
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--black);
+    display: inline;
+    margin-right: 10px;
+}
+
+.card__categories_item:last-child {
+    margin-right: 0;
+}
+
+.card__datetime {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--black);
+}
+
+.card__title {
+    margin-bottom: 12px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--black);
+}
+
+.card__description {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--grey);
+}
+
+.card__author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--black);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
