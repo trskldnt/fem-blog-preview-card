@@ -3,6 +3,9 @@
     src: url('fonts/Figtree-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
 } */
+html {
+    font-size: 100%;
+}
 
 :root {
     --black: #111;
@@ -65,7 +68,7 @@ main {
     padding: 4px 12px;
     background: var(--yellow);
     font-weight: 800;
-    font-size: 14px;
+    font-size: clamp(0.75rem, 4vw, 0.875rem);
     line-height: 150%;
     color: var(--black);
     display: inline;
@@ -89,7 +92,7 @@ main {
 .card__datetime {
     margin-bottom: 12px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: clamp(0.75rem, 4vw, 0.875rem);
     line-height: 150%;
     color: var(--black);
 }
@@ -97,7 +100,7 @@ main {
 .card__title {
     margin-bottom: 12px;
     font-weight: 800;
-    font-size: 24px;
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
     line-height: 150%;
     color: var(--black);
 }
@@ -116,7 +119,7 @@ main {
 .card__description {
     margin-bottom: 24px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: clamp(0.875rem, 4vw, 1rem);
     line-height: 150%;
     color: var(--grey);
 }
