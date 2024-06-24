@@ -43,7 +43,8 @@ main {
     background: var(--pure-white);
 }
 
-.card:hover {
+.card:hover,
+.card:focus {
     box-shadow: 16px 16px 0 0 #000;
     background: var(--pure-white);
 }
@@ -80,7 +81,8 @@ main {
     text-decoration: none;
 }
 
-.card__categories_item a:hover {
+.card__categories_item a:hover,
+.card__categories_item a:focus {
     text-decoration: underline;
 }
 
@@ -105,7 +107,8 @@ main {
     text-decoration: none;
 }
 
-.card__title a:hover {
+.card__title a:hover,
+.card__title a:focus {
     text-decoration: none;
     color: var(--yellow);
 }
